@@ -1,6 +1,6 @@
 - id: "unittest-hook"
   name: "Unittest Hook"
-  entry: unittest 
+  entry: run-unittest.sh 
   types: [python]
   exclude: ".yaml$|.yml$"
   language: "script"
