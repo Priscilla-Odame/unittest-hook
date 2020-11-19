@@ -1,0 +1,8 @@
+- id: "unittest-hook"
+  name: "Unittest Hook"
+  entry: unittest 
+  types: [python]
+  exclude: ".yaml$|.yml$"
+  language: "script"
+  description: "This is a hook to run unittests before a commit"
+  
