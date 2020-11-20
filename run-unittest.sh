@@ -3,7 +3,7 @@
 echo 'Running tests'
 
 git stashi > /dev/null
-python3 manage.py test '*test_.py'
+python -m unittest discover -s test/ -p 'test*'
 if [ $? -ne 0 ]; then
 	echo 'A unit test failed. Aborting commit'
 	echo 'Bypass with git commit --no-verify'
